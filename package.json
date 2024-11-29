@@ -1,0 +1,26 @@
+{
+  "name": "simple-taproot",
+  "version": "0.0.23",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@mempool/mempool.js": "^2.3.0",
+    "bip174": "^3.0.0-rc.1",
+    "bip32": "^5.0.0-rc.0",
+    "bitcoin-core-ts": "^3.0.3",
+    "bitcoinjs-lib": "^7.0.0-rc.0",
+    "ecpair": "^3.0.0-rc.0",
+    "tiny-secp256k1": "^2.2.3",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.12",
+    "dts-bundle-generator": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "scripts": {
+    "lint": "tslint -c tslint.json test/*.ts",
+    "fmt": "prettier --tab-width 4 --print-width 120 --parser typescript --write test/*.ts"
+  }
+}
